@@ -4,13 +4,15 @@
 #include "stdlib.h"
 int main(int argc, char const *argv[])
 {
-	float a,b,c,d,e,tmp;
+	int a,b,c,d,e,tmp;
 	int max(int a,int b);
 	int min(int a,int b);	//在main函数中要声明其他函数
 	printf("Please input a:");
-		scanf("%f",&a);
+		scanf_s("%f",&a);
+		fflush(stdin);
 	printf("Please input b:");
-		scanf("%f",&b);
+		scanf_s("%f",&b);
+		fflush(stdin);
 	c=max(a,b);				//c为较大数
 	d=min(a,b);				//d为较小数
 	e=c/d;					//e为余数
